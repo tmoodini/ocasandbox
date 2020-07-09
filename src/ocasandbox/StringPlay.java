@@ -2,6 +2,7 @@ package ocasandbox;
 
 public class StringPlay {
 	
+<<<<<<< HEAD
 	public static void main(String[] args) {
 		
 		StringBuilder sb = new StringBuilder("Hello");
@@ -10,5 +11,8 @@ public class StringPlay {
 		System.out.println(sb + " " + sb.hashCode());
 		
 	}
+=======
+	
+>>>>>>> branch 'master' of https://github.com/tmoodini/ocasandbox.git
 
 }
