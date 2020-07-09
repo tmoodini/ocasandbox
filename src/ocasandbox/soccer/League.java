@@ -5,6 +5,8 @@ import java.util.Random;
 public class League {
 
 	public static void main(String[] args) {
+		
+		League league = new League();
 		Player[] homeRoster = new Player[3];
 		Player[] awayRoster = new Player[3];
 		
@@ -35,8 +37,23 @@ public class League {
 			System.out.println(g.getPlayer().getName() + " " + g.getTeam().getTeamName() + " " + g.getTime());
 		}
 		
+		league.searchAndPrint(homeRoster, "o");
+		
 
 	}
+	
+	public void searchAndPrint(Player[] roster, String searchString) {
+		
+		CharSequence cs = searchString.subSequence(0, searchString.length());
+		System.out.println(cs.toString());
+		for(Player p : roster) {
+			if (p.getName().contains(cs)) {
+				System.out.println(p.getName());
+			}
+		}
+		
+	}
+	
 	
 	
 
